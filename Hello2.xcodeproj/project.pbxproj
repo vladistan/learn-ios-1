@@ -14,6 +14,9 @@
 		F5407C3222D2BFB300FF5A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5407C3022D2BFB300FF5A84 /* LaunchScreen.storyboard */; };
 		F5407C3D22D2BFB300FF5A84 /* Hello2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5407C3C22D2BFB300FF5A84 /* Hello2Tests.swift */; };
 		F5407C4822D2BFB300FF5A84 /* Hello2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5407C4722D2BFB300FF5A84 /* Hello2UITests.swift */; };
+		F5407C5622D2F58000FF5A84 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5407C5522D2F58000FF5A84 /* Distance.swift */; };
+		F5407C5922D30BBD00FF5A84 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5407C5822D30BBD00FF5A84 /* UIColorExtension.swift */; };
+		F5407C5B22D30D5000FF5A84 /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5407C5A22D30D5000FF5A84 /* ColoredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F5407C4322D2BFB300FF5A84 /* Hello2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hello2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5407C4722D2BFB300FF5A84 /* Hello2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello2UITests.swift; sourceTree = "<group>"; };
 		F5407C4922D2BFB300FF5A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5407C5522D2F58000FF5A84 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		F5407C5822D30BBD00FF5A84 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F5407C5A22D30D5000FF5A84 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		F5407C2622D2BFB300FF5A84 /* Hello2 */ = {
 			isa = PBXGroup;
 			children = (
+				F5407C5722D2F59800FF5A84 /* Model */,
 				F5407C2722D2BFB300FF5A84 /* AppDelegate.swift */,
 				F5407C2922D2BFB300FF5A84 /* ViewController.swift */,
 				F5407C2B22D2BFB300FF5A84 /* Main.storyboard */,
 				F5407C2E22D2BFB300FF5A84 /* Assets.xcassets */,
 				F5407C3022D2BFB300FF5A84 /* LaunchScreen.storyboard */,
 				F5407C3322D2BFB300FF5A84 /* Info.plist */,
+				F5407C5822D30BBD00FF5A84 /* UIColorExtension.swift */,
+				F5407C5A22D30D5000FF5A84 /* ColoredView.swift */,
 			);
 			path = Hello2;
 			sourceTree = "<group>";
@@ -123,6 +132,14 @@
 				F5407C4922D2BFB300FF5A84 /* Info.plist */,
 			);
 			path = Hello2UITests;
+			sourceTree = "<group>";
+		};
+		F5407C5722D2F59800FF5A84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5407C5522D2F58000FF5A84 /* Distance.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5407C5622D2F58000FF5A84 /* Distance.swift in Sources */,
 				F5407C2A22D2BFB300FF5A84 /* ViewController.swift in Sources */,
 				F5407C2822D2BFB300FF5A84 /* AppDelegate.swift in Sources */,
+				F5407C5922D30BBD00FF5A84 /* UIColorExtension.swift in Sources */,
+				F5407C5B22D30D5000FF5A84 /* ColoredView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R32B7SV4L;
 				INFOPLIST_FILE = Hello2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persyst.Hello2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -453,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R32B7SV4L;
 				INFOPLIST_FILE = Hello2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persyst.Hello2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
