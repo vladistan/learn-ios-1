@@ -35,15 +35,11 @@ class ViewController: UIViewController {
             distance.km = kmDouble
             milesTextField.text = "\(Int(distance.miles))"
         }
-        
-        
-        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
 
         milesTextField.text = "\(distance.miles)"
         kmTextField.text = "\(Int(distance.km))"
