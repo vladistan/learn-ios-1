@@ -53,6 +53,7 @@
 		F5407C5522D2F58000FF5A84 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		F5407C5822D30BBD00FF5A84 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F5407C5A22D30D5000FF5A84 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
+		F5FBF6B922D3DEE100071502 /* Hello2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		F5407C2622D2BFB300FF5A84 /* Hello2 */ = {
 			isa = PBXGroup;
 			children = (
+				F5FBF6B922D3DEE100071502 /* Hello2.entitlements */,
 				F5407C5722D2F59800FF5A84 /* Model */,
 				F5407C2722D2BFB300FF5A84 /* AppDelegate.swift */,
 				F5407C2922D2BFB300FF5A84 /* ViewController.swift */,
@@ -210,6 +212,11 @@
 				TargetAttributes = {
 					F5407C2322D2BFB300FF5A84 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					F5407C3722D2BFB300FF5A84 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -452,6 +459,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Hello2/Hello2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R32B7SV4L;
 				INFOPLIST_FILE = Hello2/Info.plist;
@@ -471,6 +480,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Hello2/Hello2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R32B7SV4L;
 				INFOPLIST_FILE = Hello2/Info.plist;
